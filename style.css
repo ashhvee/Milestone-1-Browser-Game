@@ -1,0 +1,11 @@
+body {
+    background-color: rgba(246, 210, 91, 0.765);
+}
+
+.background {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30em;
+}
