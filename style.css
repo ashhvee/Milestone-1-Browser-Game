@@ -3,25 +3,7 @@
     margin: 0;
 }
 
-/* #background {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 50%;
-    height: 50%;
-}
-
-#beach {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-width: 50%;
-    min-height: 50%;
-    margin: auto;    
-} */
-
+/* auto scale bg img to fit browser */
 html {
     background: url(assets/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -31,6 +13,40 @@ html {
 }
 
 #stickman {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 600px;
+}
+
+#spike-A {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 580px;
+    left: 300px;
+}
+
+#spike-B {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 580px;
+    left: 450px;
+}
+
+#spike-C {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 580px;
+    left: 800px;
+}
+
+#spike-D {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 580px;
+    left: 1200px;
 }
