@@ -23,7 +23,7 @@ html {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 580px;
+    top: 480px;
     left: 300px;
 }
 
@@ -31,22 +31,70 @@ html {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 580px;
+    top: 480px;
     left: 450px;
 }
 
-#spike-C {
+/* #spike-C {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 580px;
-    left: 800px;
-}
+    top: 480px;
+    left: 200px;
+} */
 
 #spike-D {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 580px;
+    top: 480px;
     left: 1200px;
+}
+
+#finish-line {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 480px;
+    left: 1500px;
+}
+
+#spike-B2 {
+    width: 50px;
+    height: 70px;
+    position: relative;
+    top: 480px;
+    left: 240px;
+}
+
+#spike-A2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 300px;
+    right: 150px;
+}
+
+#movingSpike {
+    width: 45px;
+    height: 50px;
+    position: relative;
+    top: 480px;
+    left: 445px;
+}
+
+#movingSpike2 {
+    width: 45px;
+    height: 50px;
+    position: relative;
+    top: 480px;
+    left: 450px;
+}
+
+#movingSpike3 {
+    width: 45px;
+    height: 50px;
+    position: relative;
+    top: 480px;
+    left: 600px;
 }
