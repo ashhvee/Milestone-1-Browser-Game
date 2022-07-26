@@ -1,5 +1,5 @@
 let stickmanBottom = 0
-let maxHeight = 300
+let maxHeight = 50
 
 function jump(){
     var stickman = document.getElementById("stickman");
@@ -10,7 +10,7 @@ function jump(){
             clearInterval(upInterval)
             fall()
         }
-        stickmanBottom += 10
+        stickmanBottom += 25
         stickman.style.bottom = `${stickmanBottom}px`
     },100)
 }
@@ -21,7 +21,7 @@ function fall(){
         if(stickmanBottom <= 10 ){
             clearInterval(downInterval)
         }
-        stickmanBottom -= 10
+        stickmanBottom -= 25
         stickman.style.bottom = `${stickmanBottom}px`
     },100)
 }

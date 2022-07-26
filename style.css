@@ -6,6 +6,7 @@
 
 #background {
     height: 100vh;
+    bottom: 100px;
 }
 
 /* auto scale bg img to fit browser */
@@ -42,7 +43,7 @@ html {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 300px;
 }
 
@@ -50,7 +51,7 @@ html {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 450px;
 }
 
@@ -58,7 +59,7 @@ html {
     width: 50px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 1200px;
 }
 
@@ -66,7 +67,7 @@ html {
     width: 50px;
     height: 70px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 240px;
 }
 
@@ -74,7 +75,7 @@ html {
     width: 45px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 445px;
 }
 
@@ -82,7 +83,7 @@ html {
     width: 45px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 450px;
 }
 
@@ -90,7 +91,7 @@ html {
     width: 45px;
     height: 50px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 600px;
 }
 
@@ -98,6 +99,6 @@ html {
     width: 150px;
     height: 150px;
     position: relative;
-    top: 480px;
+    top: 800px;
     left: 1500px;
 }
