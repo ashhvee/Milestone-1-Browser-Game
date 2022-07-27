@@ -6,7 +6,7 @@
 
 #background {
     height: 100vh;
-    bottom: 100px;
+    right: 100px;
 }
 
 /* auto scale bg img to fit browser */
@@ -20,85 +20,74 @@ html {
 
 /* main character*/
 #stickman {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     position: absolute;
+    left: 50px;
     bottom: 0;
 }
 
-/* .animate {
-    animation: jump 400ms;
-} */
-
-/* allows stickman to jump/how high to jump */
-/* @keyframes jump {
-    0%{top: 150px;}
-    40%{top: 100px;}
-    80%{top: 100px;}
-    100%{top: 150px;}
-} */
-
 /* all obstacles */
-#spike-A {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 300px;
-}
 
 #spike-B {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 450px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 300px;
+    bottom: 0;
+}
+
+#spike-C {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 475px;
+    bottom: 0;
 }
 
 #spike-D {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 1200px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 700px;
+    bottom: 0;
 }
 
 #spike-B2 {
-    width: 50px;
-    height: 70px;
-    position: relative;
-    top: 800px;
-    left: 240px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 950px;
+    bottom: 0;
 }
 
-#movingSpike {
-    width: 45px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 445px;
+#spike-C2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 1200px;
+    bottom: 0;
 }
 
-#movingSpike2 {
-    width: 45px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 450px;
-}
-
-#movingSpike3 {
-    width: 45px;
-    height: 50px;
-    position: relative;
-    top: 800px;
-    left: 600px;
+#spike-D2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 900px;
+    left: 1550px;
+    bottom: 0;
 }
 
 #finish-line {
     width: 150px;
     height: 150px;
-    position: relative;
+    position: absolute;
     top: 800px;
-    left: 1500px;
+    left: 1800px;
+    bottom: 0;
 }
