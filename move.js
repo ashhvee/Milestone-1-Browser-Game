@@ -15,16 +15,6 @@ moveStickman = function(moveRight) {
         }, speed)
     }
         stickman.style.left = left + moveRight + "px"
-
-    // collision detection
-    let player = stickman.getBoundingClientRect()
-    console.log(stickman)
-    function detectCollision(stickman, obstacles) {
-        return !(
-        stickman.bottom < obstacles.top ||
-        stickman.right < obstacles.left
-        ) 
-    }
 }
     var timer = setInterval(
         function() { 
@@ -57,17 +47,21 @@ function fall(){
     },100)
 }
 
+// // collsion detection
+const stickman = document.getElementById("stickman").getBoundingClientRect()
+const obstacles = document.getElementById("obstacles").getBoundingClientRect()
 
-// const stickman = document.getElementById("stickman")
-// const obstacles = document.getElementById("obstacles").getBoundingClientRect()
+function detectCollision(stickman, obstacles) {
+    return !(
+    stickman.bottom < obstacles.top ||
+    stickman.right < obstacles.left
+    ) 
+}
 
-// console.log(stickman)
-
-// function detectCollision(stickman, obstacles) {
-//     return !(
-//             stickman.bottom < obstacles.top ||
-//             stickman.right < obstacles.left
-//         ) 
+// if (stickman.bottom < obstacles.top ||
+//     stickman.right < obstacles.left
+// ){
+//     window.alert("You lose!")
+// }   else {
+    
 // }
-
-// console.log(detectCollision(stickman))

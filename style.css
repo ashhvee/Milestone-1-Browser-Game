@@ -1,12 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
 #background {
     height: 100vh;
-    right: 100px;
+    bottom: 0;
 }
 
 /* auto scale bg img to fit browser */
@@ -23,12 +22,11 @@ html {
     width: 90px;
     height: 90px;
     position: absolute;
-    left: 50px;
+    left: 0;
     bottom: 0;
 }
 
 /* all obstacles */
-
 #spike-B {
     width: 40px;
     height: 40px;
@@ -88,6 +86,6 @@ html {
     height: 150px;
     position: absolute;
     top: 800px;
-    left: 1800px;
+    left: 1700px;
     bottom: 0;
 }
