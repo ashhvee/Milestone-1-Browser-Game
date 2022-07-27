@@ -47,14 +47,14 @@ function fall(){
     },100)
 }
 
-// // collsion detection
+// // collision detection
 const stickman = document.getElementById("stickman").getBoundingClientRect()
 const obstacles = document.getElementById("obstacles").getBoundingClientRect()
 
 function detectCollision(stickman, obstacles) {
     return !(
-    stickman.bottom < obstacles.top ||
-    stickman.right < obstacles.left
+    stickman.bottom < obstacles.top(window.alert("You lose!")) ||
+    stickman.right < obstacles.left(window.alert("You lose!"))
     ) 
 }
 
