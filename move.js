@@ -5,6 +5,7 @@ var speed = 7
 // stickman automatically runs right
 moveStickman = function(moveRight) {
     var stickman = document.getElementById("stickman")
+    var obstaclesArray = document.querySelectorAll(".obst")
     // console.log("moving")
         left = stickman.offsetLeft
       
@@ -12,6 +13,9 @@ moveStickman = function(moveRight) {
         clearTimeout(timer)
         timer = setInterval(function() {
             moveStickman(moveRight)
+            obstaclesArray.forEach(e => {
+            detectCollision(document.getElementById("stickman"), e);
+            })
         }, speed)
     }
         stickman.style.left = left + moveRight + "px"
@@ -48,20 +52,15 @@ function fall(){
 }
 
 // // collision detection
-const stickman = document.getElementById("stickman").getBoundingClientRect()
-const obstacles = document.getElementById("obstacles").getBoundingClientRect()
+const stickmanBox = document.getElementById("stickman").getBoundingClientRect()
+const obstaclesBox = document.getElementById("obstacles").getBoundingClientRect()
 
 function detectCollision(stickman, obstacles) {
-    return !(
-    stickman.bottom < obstacles.top(window.alert("You lose!")) ||
-    stickman.right < obstacles.left(window.alert("You lose!"))
-    ) 
+    console.log(stickman.offsetTop)
+    console.log(obstacles.offsetTop)
+    if ((
+    stickman.offsetTop > (obstacles.offsetTop - 50)  &&
+    stickman.offsetLeft > (obstacles.offsetLeft - 40)
+    ) )
+    {window.alert("You lose!")}
 }
-
-// if (stickman.bottom < obstacles.top ||
-//     stickman.right < obstacles.left
-// ){
-//     window.alert("You lose!")
-// }   else {
-    
-// }
