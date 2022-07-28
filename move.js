@@ -13,8 +13,8 @@ moveStickman = function(moveRight) {
         clearTimeout(timer)
         timer = setInterval(function() {
             moveStickman(moveRight)
-            obstaclesArray.forEach(e => {
-            detectCollision(document.getElementById("stickman"), e);
+            obstaclesArray.forEach(e => { //access all obstacles
+            detectCollision(document.getElementById("stickman"), e); 
             })
         }, speed)
     }
@@ -51,7 +51,7 @@ function fall(){
     },100)
 }
 
-// // collision detection
+// collision detection
 const stickmanBox = document.getElementById("stickman").getBoundingClientRect()
 const obstaclesBox = document.getElementById("obstacles").getBoundingClientRect()
 
