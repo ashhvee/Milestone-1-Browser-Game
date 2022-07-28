@@ -59,8 +59,8 @@ function detectCollision(stickman, obstacles) {
     console.log(stickman.offsetTop)
     console.log(obstacles.offsetTop)
     if ((
-    stickman.offsetTop > (obstacles.offsetTop - 50)  &&
-    stickman.offsetLeft > (obstacles.offsetLeft - 40)
+        stickman.offsetTop > (obstacles.offsetTop - 50)  &&
+        stickman.offsetLeft > (obstacles.offsetLeft - 40)
     ) )
     {window.alert("You lose!")}
 }
